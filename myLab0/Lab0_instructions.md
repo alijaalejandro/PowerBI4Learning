@@ -16,6 +16,9 @@ IMPORTANTE! Antes de emprezar.
 2.  Actualiar la configuración regional. *Recordar que esta opción se encuentra en el menú de Opciones*
 *La configuración regional le indica a Power BI que juego de caracteres y sistema de moneda, fechas, etc ha de utilizar para auto-reconocer los datos que se le proveen*
 
+Intruducción a Datos en ficheros de Texto
+-------------
+
 3.  Localizar el archivo comprimido *myRENT\_1k.zip* en el directorio de correspondiente al Lab0 de este curso. Si tiene problemas para localizar este directorio recuerde que puede encontrarlo a través del siguiente enlace de descarga directo <https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab0/myRENT_1k.zip>.
 
 *Sugerencia*: es buena idea que empieces por crear una carpeta en tus documentos para que puedas ir guardando la información de este curso.
@@ -39,34 +42,47 @@ IMPORTANTE! Antes de emprezar.
     ## 5 HUNE RENTAL, S.L.    SERVICIOS: Rotulistas   10119
     ## 6 HUNE RENTAL, S.L.    SERVICIOS: Rotulistas   10119
 
-1.  Click on Edit para observar qué ocurre.
+5. Ahora vamos a aprender a guardar este archivo como tipo MS Excel y como tipo CSV nuevamente.
+
+Introducción a Power BI. Importando datos en formato CSV.
+-------------
+1. Ejecutamos Power BI Desktop.
+2. Vamos a **Obtener Datos** -> **CSV** --> **Editar**
 
 *A continuación se abrirá una nueva pantalla denominada el Query Editor. Este módulo es el encargado de permitir el modelado avanzado de datos con Power BI. Con este módulo podrémos realizar transformaciones a los datos, agregaciones, adaptaciones de formato, etc.*
 
 Detengámonos un momento a observar las diferentes partes de este módulo. Volveremos con más detalle sobre este módulo en el capítulo 3 sobre modelado avanzado de datos con Power BI.
 
-1.  Apliquemos algunas transformaciones básicas.
-
-Click on Transform -&gt; Count Rowsw
+3.  Apliquemos algunas transformaciones básicas.
+4.  Hacer Click en **Transformar** -> **Contar Filas**
 
 -   **Pregunta 1**. ¿Cuantas filas tiene este conjunto de datos?
--   **Pregunta 2**. Como puedes observar, Power BI ha identificado automaticamente el tipo de datos que contienen las columnas del conjunto de datos (Inferencia automática del Esquema) ¿Ha sido correcta esta asignación?
+-   **Pregunta 2**. Como puedes observar, Power BI ha identificado automaticamente el tipo de datos que contienen las columnas del conjunto de datos (*Inferencia automática del Esquema*) ¿Ha sido correcta esta asignación?
 
-1.  Hacer click en **close&apply**
+
+Primeras Visualizaciones con Power BI
+-------------
+
+1.  Hacer click en **Inicio** -> **Aplicar y Cerrar**
 
 2.  Observamos la vista de Power BI Desktop. Disponemos de 3 modos de visualización: **Report**, **Data** y **Relationships**.
 
-3.  Pasamos a modo **Data** y formateamos adecuadamente
+3.  Pasamos a modo **Report** Renombramos el Report **MyRent Report**.
 
-4.  Pasamos a modo **Report** Renombramos el Report **MyRent Report**.
+4.  Hacemos un **Gráfico de Barras Horizontales** con los campos **Importe** *vs* **Delegación*. Ordenamos por **Importe**
+5.  Pasamos a modo **Data** y formateamos adecuadamente  
 
-5.  Hacemos un **Bar Chart** con importe vs Delegación sorted by Importe.
 
-6.  Hacemos un **Map Plot** con importe by delegación. **Upps!. Doesn\`t work**
+6.  A continuación hacemos un **Gráfico de Mapa** con los campos **Importe** y **Delegación**.
 
-Explicación: Power BI tiene cierta inteligencia para detectar datos geográficos, como continentes, paises, ciudades, códigos postales, etc. Sin embargo, como sabéis, los nombres de ciudades no son únicos alrrededor del mundo. Lo ideal es trabajar con indentificadores únicos como códigos postales dentro de un pais o latitud y longitud en todo el mundo. Lo que ocurre es que, en el mundo real, a verces no disponemos de toda la información en perfecto estado. Por eso debemos de aplicar algunos trucos para obtener el resultado más próximo a lo que buscamos.
+Observa el resultado. ¿Qué ha ocurrido? ¿Están correctamente situadas todas las delegaciones?
+
+*Explicación*: power BI tiene cierta inteligencia para detectar datos geográficos, como continentes, paises, ciudades, códigos postales, etc. Sin embargo, como sabéis, los nombres de ciudades no son únicos alrrededor del mundo. Lo ideal es trabajar con indentificadores únicos como códigos postales dentro de un pais o latitud y longitud en todo el mundo. Lo que ocurre es que, en el mundo real, a verces no disponemos de toda la información en perfecto estado. Por eso debemos de aplicar algunos trucos para obtener el resultado más próximo a lo que buscamos.
 
 Vamos a ver una posible solución a este problema en concreto. Además aprovecharemos para introducir el tema de las **Jerarquías** en Power BI.
+
+Primeras transformaciones con Power BI
+-------------
 
 1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Country**. Fijemos el valor de country a la constante *Spain*. Categoricemos esta nueva variable como tipo **Country**
 
