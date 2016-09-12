@@ -1,23 +1,33 @@
-Lab 0. E2E Solution based on Power BI
+Lab 0. Ejemplo de Solución Extremo a Extremo con Power BI
 ================
 
 Introducción
 ------------
 
-En este laboratorio de introducción vamos a ejemplificar un flujo de datos completo en Power BI. Desde la carga original de un conjunto de datos en formato MS Excel hasta la creación de un cuadro de mando personalizado en Power BI service.
+En este laboratorio de introducción vamos a ejemplificar un **flujo de datos completo en Power BI**. Desde la **carga original de un conjunto de datos** en formato *CSV* hasta la **creación de un cuadro de mando** personalizado en Power BI service.
 
 Instrucciones
 -------------
 
 IMPORTANTE! Antes de emprezar.
 
-1.  Ejecute la aplicación Power BI Desktop. *Recuerde que si no lo ha hecho aun puede descargar Power BI gratuitamente en <https://powerbi.microsoft.com/en-us/downloads> *
+1.  Ejecute la aplicación Power BI Desktop. *Recuerde que si no lo ha hecho aun puede descargar Power BI gratuitamente en <https://www.microsoft.com/es-ES/download/confirmation.aspx?id=45331> *
 
 2.  Actualiar la configuración regional. *Recordar que esta opción se encuentra en el menú de Opciones*
+*La configuración regional le indica a Power BI que juego de caracteres y sistema de moneda, fechas, etc ha de utilizar para auto-reconocer los datos que se le proveen*
 
-3.  Localizar el fichero de datos de MS Excel *myRENT\_1k.xlsx* en el directorio de correspondiente al Lab0 de este curso. Si tiene problemas para localizar este directorio recuerde que puede encontrar toda la información de este curso en <https://github.com/alijaalejandro/PowerBI4Learning>.
+3.  Localizar el archivo comprimido *myRENT\_1k.zip* en el directorio de correspondiente al Lab0 de este curso. Si tiene problemas para localizar este directorio recuerde que puede encontrarlo a través del siguiente enlace de descarga directo <https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab0/myRENT_1k.zip>.
 
-4.  Hacer click en Get Data --&gt; Seleccionar tipo de fichero csv
+*Sugerencia*: es buena idea que empieces por crear una carpeta en tus documentos para que puedas ir guardando la información de este curso.
+
+4. Una vez descargado el archivo, prueba a abrirlo con el explorador de Windows. Una vez que accedas a su interior verás el archivo myRENT_1k.csv. Ahora debes de copiar este archivo a la carpeta que has creado anteriormente.
+
+5. A continuación vamos a aprender a importar este tipo de archivos en MS Excel. **Ejecutamos MS Excel y abrimos un libro en blanco**.
+6. Ir a **Datos** -> **Obtener Datos Externos** -> **Desde un fichero de Texto**
+7. Importa el archivo sabiendo que el delimitador de campos es ";" y el caracter decimal es ","
+
+
+4.  Si todo ha ido bien deberías de ver algo similar a esto en la hoja de Excel.
 
 <!-- -->
 
