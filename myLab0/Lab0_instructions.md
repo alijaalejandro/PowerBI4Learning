@@ -121,5 +121,5 @@ Power BI Service
 Ejercicios Adicionales
 -------------
 
-1. Prueba a buscar información rápida en el conjunto de datos en Power BI Service. Para ello, colocate sobre el icono de los **...** al lado del conjunto de datos en Power BI Service. Haz click sobre *INFORMACIÓN RÁPIDA*
+1. Prueba a **buscar información rápida** en el conjunto de datos en Power BI Service. Para ello, colocate sobre el icono de los **...** al lado del conjunto de datos en Power BI Service. Haz click sobre *INFORMACIÓN RÁPIDA*
 2. Prueba a buscar **exportar los datos de una visualización hacia MS Excel**. Para ello, colocate sobre el icono de los **...** al lado de la visualización del gráfico de barras. Haz click sobre *EXPORTAR DATOS A EXCEL*
