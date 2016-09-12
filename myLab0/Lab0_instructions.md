@@ -11,26 +11,27 @@ Instrucciones
 
 IMPORTANTE! Antes de emprezar.
 
-1.  Ejecute la aplicación Power BI Desktop. *Recuerde que si no lo ha hecho aun puede descargar Power BI gratuitamente en <https://www.microsoft.com/es-ES/download/confirmation.aspx?id=45331> *
+1.  Ejecute la aplicación Power BI Desktop. *Recuerde que si no lo ha hecho aun puede descargar Power BI gratuitamente en <https://www.microsoft.com/es-ES/download/confirmation.aspx?id=45331>*
+2.  Hacer una cuenta gratuita de Power BI en https://powerbi.microsoft.com/es-es/get-started/ 
 
-2.  Actualiar la configuración regional. *Recordar que esta opción se encuentra en el menú de Opciones*
+3.  Actualiar la configuración regional. *Recordar que esta opción se encuentra en el menú de Opciones*
 *La configuración regional le indica a Power BI que juego de caracteres y sistema de moneda, fechas, etc ha de utilizar para auto-reconocer los datos que se le proveen*
 
-Intruducción a Datos en ficheros de Texto
+Introducción a Datos en ficheros de Texto
 -------------
 
-3.  Localizar el archivo comprimido *myRENT\_1k.zip* en el directorio de correspondiente al Lab0 de este curso. Si tiene problemas para localizar este directorio recuerde que puede encontrarlo a través del siguiente enlace de descarga directo <https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab0/myRENT_1k.zip>.
+1.  Localizar el archivo comprimido *myRENT\_1k.zip* en el directorio de correspondiente al Lab0 de este curso. Si tiene problemas para localizar este directorio recuerde que puede encontrarlo a través del siguiente enlace de descarga directo <https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab0/myRENT_1k.zip>.
 
 *Sugerencia*: es buena idea que empieces por crear una carpeta en tus documentos para que puedas ir guardando la información de este curso.
 
-4. Una vez descargado el archivo, prueba a abrirlo con el explorador de Windows. Una vez que accedas a su interior verás el archivo myRENT_1k.csv. Ahora debes de copiar este archivo a la carpeta que has creado anteriormente.
+2. Una vez descargado el archivo, prueba a abrirlo con el explorador de Windows. Una vez que accedas a su interior verás el archivo myRENT_1k.csv. Ahora debes de copiar este archivo a la carpeta que has creado anteriormente.
 
-5. A continuación vamos a aprender a importar este tipo de archivos en MS Excel. **Ejecutamos MS Excel y abrimos un libro en blanco**.
-6. Ir a **Datos** -> **Obtener Datos Externos** -> **Desde un fichero de Texto**
-7. Importa el archivo sabiendo que el delimitador de campos es ";" y el caracter decimal es ","
+3. A continuación vamos a aprender a importar este tipo de archivos en MS Excel. **Ejecutamos MS Excel y abrimos un libro en blanco**.
+4. Ir a **Datos** -> **Obtener Datos Externos** -> **Desde un fichero de Texto**
+5. Importa el archivo sabiendo que el delimitador de campos es ";" y el caracter decimal es ","
 
 
-4.  Si todo ha ido bien deberías de ver algo similar a esto en la hoja de Excel.
+6.  Si todo ha ido bien deberías de ver algo similar a esto en la hoja de Excel.
 
 <!-- -->
 
@@ -42,7 +43,7 @@ Intruducción a Datos en ficheros de Texto
     ## 5 HUNE RENTAL, S.L.    SERVICIOS: Rotulistas   10119
     ## 6 HUNE RENTAL, S.L.    SERVICIOS: Rotulistas   10119
 
-5. Ahora vamos a aprender a guardar este archivo como tipo MS Excel y como tipo CSV nuevamente.
+7. Ahora vamos a aprender a guardar este archivo como tipo MS Excel y como tipo CSV nuevamente.
 
 Introducción a Power BI. Importando datos en formato CSV.
 -------------
@@ -84,26 +85,26 @@ Más info aquí: https://powerbi.microsoft.com/en-us/documentation/powerbi-servi
 Primeras transformaciones con Power BI
 -------------
 
-1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Pais**. Fijemos el valor de Pais a la constante *España*. Categoricemos esta nueva variable como tipo **Pais**
-
-Para crear una nueva columna, vamos a **Modelado** -> **Nueva Columna** y escribimos la siguiente fórmula:
+1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Pais**. Fijemos el valor de Pais a la constante *España*. Categoricemos esta nueva variable como tipo **Pais**. Para crear una nueva columna, vamos a **Modelado** -> **Nueva Columna** y escribimos la siguiente fórmula:
 `Country = "Spain"`
 
 2.  Renombremos la columna **Delegación** como **Ciudad**. Categoricemos como **Ciudad**
 3.  Creemos una nueva coluna de nuevo, llamada **Ciudad-Pais**. Para ello escribimos la siguiente fórmula en la barra de creación de una nueva columna:
 `Ciudad-Pais = 'My Rent Report'[Ciudad] & "," & 'My Rent Report'[Pais]`
 
-4. Categoricemos nuevamente la columna **Ciudad-Pais** como tipo Ciudad.
+4.  Categoricemos nuevamente la columna **Ciudad-Pais** como tipo Ciudad.
 
-5. Volvamos a la vista **Report**
+5.  Volvamos a la vista **Report**
 
-3.  Hagamos de nuevo el Map Plot en este caso utilizando la nueva variable creada como jerarquía.
+3.  Hagamos de nuevo el Map Plot en este caso utilizando la nueva variable **Ciudad-Pais**. Casi lo hemos logrado! solamente ASTURIAS está mal ubicada en el Mapa. Lógico, Asturias no es una Ciudad. Bien, vamos a solucionarlo.
+4.  Abrir el **Editor de Consultas** en la pestaña **Inicio**. Seleccionar la columna **Ciudad**. Hacer click en **Reemplazar valores**. `ASTURIAS por GIJON`.
+5.  Hacer Click en **Cerrar y Aplicar**
 
-4.  Finalmente añadamos el **Tipo de Obra** como leyenda en ambos gráficos.
+4.  Finalmente añadamos el **Tipo de Máquina** como leyenda en ambos gráficos.
 
-5.  Renombramos *Page 1* como *MyFirstReport*
+5.  Renombramos *Página 1* como *MyFirstReport*
 
-6.  Click on Save as *MyFirstReport*
+6.  Vamos a **Archivo** -> **Guardar**.
 
 7.  Go to <http://www.powerbi.com> or <https://app.powerbi.com> para explorar el informe.
 
