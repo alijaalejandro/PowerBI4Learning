@@ -54,7 +54,7 @@ Introducción a Power BI. Importando datos en formato CSV.
 Detengámonos un momento a observar las diferentes partes de este módulo. Volveremos con más detalle sobre este módulo en el capítulo 3 sobre modelado avanzado de datos con Power BI.
 
 3.  Apliquemos algunas transformaciones básicas.
-4.  Hacer Click en **Transformar** -> **Contar Filas**
+4.  Hacer Click en **Transformar** -> **Contar Filas**. A continuación elimina este paso en el editor de **Pasos Aplicados**
 
 -   **Pregunta 1**. ¿Cuantas filas tiene este conjunto de datos?
 -   **Pregunta 2**. Como puedes observar, Power BI ha identificado automaticamente el tipo de datos que contienen las columnas del conjunto de datos (*Inferencia automática del Esquema*) ¿Ha sido correcta esta asignación?
@@ -70,27 +70,32 @@ Primeras Visualizaciones con Power BI
 3.  Pasamos a modo **Report** Renombramos el Report **MyRent Report**.
 
 4.  Hacemos un **Gráfico de Barras Horizontales** con los campos **Importe** *vs* **Delegación*. Ordenamos por **Importe**
-5.  Pasamos a modo **Data** y formateamos adecuadamente  
+5.  Pasamos a modo **Data** y formateamos adecuadamente. 
 
 
 6.  A continuación hacemos un **Gráfico de Mapa** con los campos **Importe** y **Delegación**.
 
 Observa el resultado. ¿Qué ha ocurrido? ¿Están correctamente situadas todas las delegaciones?
 
-*Explicación*: power BI tiene cierta inteligencia para detectar datos geográficos, como continentes, paises, ciudades, códigos postales, etc. Sin embargo, como sabéis, los nombres de ciudades no son únicos alrrededor del mundo. Lo ideal es trabajar con indentificadores únicos como códigos postales dentro de un pais o latitud y longitud en todo el mundo. Lo que ocurre es que, en el mundo real, a verces no disponemos de toda la información en perfecto estado. Por eso debemos de aplicar algunos trucos para obtener el resultado más próximo a lo que buscamos.
+*Explicación*: power BI tiene cierta inteligencia para detectar datos geográficos, como continentes, paises, ciudades, códigos postales, etc. Sin embargo, como sabéis, los nombres de ciudades no son únicos alrrededor del mundo. Lo ideal es trabajar con indentificadores únicos como códigos postales dentro de un pais o latitud y longitud en todo el mundo. Lo que ocurre es que, en el mundo real, a verces no disponemos de toda la información en perfecto estado. Por eso debemos de aplicar algunos **trucos** para obtener el resultado más próximo a lo que buscamos.
+Más info aquí: https://powerbi.microsoft.com/en-us/documentation/powerbi-service-tips-and-tricks-for-power-bi-map-visualizations/
 
-Vamos a ver una posible solución a este problema en concreto. Además aprovecharemos para introducir el tema de las **Jerarquías** en Power BI.
 
 Primeras transformaciones con Power BI
 -------------
 
-1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Country**. Fijemos el valor de country a la constante *Spain*. Categoricemos esta nueva variable como tipo **Country**
+1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Pais**. Fijemos el valor de Pais a la constante *España*. Categoricemos esta nueva variable como tipo **Pais**
 
+Para crear una nueva columna, vamos a **Modelado** -> **Nueva Columna** y escribimos la siguiente fórmula:
 `Country = "Spain"`
 
-1.  Renombremos la columna **Delegación** como **City**. Categoricemos como **City**
+2.  Renombremos la columna **Delegación** como **Ciudad**. Categoricemos como **Ciudad**
+3.  Creemos una nueva coluna de nuevo, llamada **Ciudad-Pais**. Para ello escribimos la siguiente fórmula en la barra de creación de una nueva columna:
+`Ciudad-Pais = 'My Rent Report'[Ciudad] & "," & 'My Rent Report'[Pais]`
 
-2.  Volvamos a la vista **Report** y creemos una jerarquía lógica **Country -&gt; City**. Para ello, debemos arrastrar el campo **city** dentro de **Country**
+4. Categoricemos nuevamente la columna **Ciudad-Pais** como tipo Ciudad.
+
+5. Volvamos a la vista **Report**
 
 3.  Hagamos de nuevo el Map Plot en este caso utilizando la nueva variable creada como jerarquía.
 
