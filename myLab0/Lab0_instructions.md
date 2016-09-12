@@ -9,7 +9,7 @@ En este laboratorio de introducción vamos a ejemplificar un **flujo de datos co
 Instrucciones
 -------------
 
-IMPORTANTE! Antes de emprezar.
+**IMPORTANTE!** Antes de emprezar.
 
 1.  Ejecute la aplicación Power BI Desktop. *Recuerde que si no lo ha hecho aun puede descargar Power BI gratuitamente en <https://www.microsoft.com/es-ES/download/confirmation.aspx?id=45331>*
 2.  Hacer una cuenta gratuita de Power BI en https://powerbi.microsoft.com/es-es/get-started/ 
@@ -96,20 +96,24 @@ Primeras transformaciones con Power BI
 
 5.  Volvamos a la vista **Report**
 
-3.  Hagamos de nuevo el Map Plot en este caso utilizando la nueva variable **Ciudad-Pais**. Casi lo hemos logrado! solamente ASTURIAS está mal ubicada en el Mapa. Lógico, Asturias no es una Ciudad. Bien, vamos a solucionarlo.
-4.  Abrir el **Editor de Consultas** en la pestaña **Inicio**. Seleccionar la columna **Ciudad**. Hacer click en **Reemplazar valores**. `ASTURIAS por GIJON`.
-5.  Hacer Click en **Cerrar y Aplicar**
+6.  Hagamos de nuevo el Map Plot en este caso utilizando la nueva variable **Ciudad-Pais**. Casi lo hemos logrado! solamente ASTURIAS está mal ubicada en el Mapa. Lógico, Asturias no es una Ciudad. Bien, vamos a solucionarlo.
+7.  Abrir el **Editor de Consultas** en la pestaña **Inicio**. Seleccionar la columna **Ciudad**. Hacer click en **Reemplazar valores**. `ASTURIAS por GIJON`.
+8.  Hacer Click en **Cerrar y Aplicar**
 
-4.  Finalmente añadamos el **Tipo de Máquina** como leyenda en ambos gráficos.
+9.  Finalmente añadamos el **Tipo de Máquina** como leyenda en ambos gráficos.
 
-5.  Renombramos *Página 1* como *MyFirstReport*
+10.  Renombramos *Página 1* como *MyFirstReport*
 
-6.  Vamos a **Archivo** -> **Guardar**.
+11.  Vamos a **Archivo** -> **Guardar**.
 
-7.  Go to <http://www.powerbi.com> or <https://app.powerbi.com> para explorar el informe.
 
-8.  Hacer click en *Anclar elemento activo*. Crear un nuevo cuadro de mando llamado *myFirtsDashboard*
+Power BI Service
+-------------
 
-9.  **Intenta hacer una pregunta en Lenguaje Natural (Naturalmente Inglés :) )**
+1.  Go to <http://www.powerbi.com> or <https://app.powerbi.com> para explorar el informe.
+
+2.  Hacer click en *Anclar elemento activo*. Crear un nuevo cuadro de mando llamado *myFirtsDashboard*
+
+3.  **Intenta hacer una pregunta en Lenguaje Natural (Naturalmente Inglés :) )**
 
 `Show importe in Tenerife` `Show importe in MAdrid and Barcelona`
