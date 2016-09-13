@@ -48,8 +48,24 @@ BING como servicio SaaS
 
 Probar con la palabra clave **ISIS**
 
-Probemos GuitHub
+Probemos con la WEB
+------------
+El siguiente ejemplo es un ejercicio que podemos hacer tod@s juntos.
+
+Vamos a ir paso a paso:
+
+1. Accedamos al siguiente enlace: http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=724,3,33,481,984,33024,0,0,0&opi=36&ftg=false&pgg=true&odg=false&fav=false&grad=false&fss=false&mode=3&cu=es-es&craap=1&fs=false&tta=8 
+2. Si todo ha ido bien veremos algo así:
+3. 
+
+
+Probemos con Wikipedia
 ------------
 
+
+Enlaces de Interés
+------------
+http://datos.gob.es/sites/all/themes/zen/aportabis/logo.png
+http://www.eldiario.es/turing/big_data/Mapa-iniciativas-Open-Data-Espana_0_277172540.html
 
 
