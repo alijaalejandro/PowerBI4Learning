@@ -27,6 +27,7 @@ En este caso, vamos a conectar con el CRM corporativo de la empresa Izertis.
 
 1. Iniciamos sesión en Power BI Service.
 2. Hacemos click en **Obtener Datos** ![Obtener Datos] (https://dpspowerbi.blob.core.windows.net/powerbi-prod-media/powerbi.microsoft.com/en-us/documentation/articles/powerbi-service-get-data/20160706081314/pbi_getdata_startscreen.png)
+
 3. Buscamos el servicio **Microsoft Dynamics CRM Online Sales Manager** y hacemos click en **Obtener**
 4. Escribimos la dirección del servicio `https://izertis.api.crm4.dynamics.com` y seleccionamos autenticación de tipo **OAuth2**
 5. Si la introducción de las creedenciales ha sido correcta pronto veremos la actualización. 
