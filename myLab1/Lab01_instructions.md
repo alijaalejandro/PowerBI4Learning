@@ -131,6 +131,8 @@ Vamos a añadir un par de indicadores numéricos en forma de tarjeta reelevantes
 Vamos a colocar un título a nuestro informe de pisos en Gijón. Para ello hacemos click en **Nuevo cuadro de Texto**
 Escribimos *Mis Pisos en Gijón*. Colocamos un recuadro de color alrededor.
 
+**IMPORTANTE** **Observar el proceso de actualización de la WEB**
+
 
 
 Enlaces de Interés
