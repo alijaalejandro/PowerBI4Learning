@@ -54,9 +54,35 @@ El siguiente ejemplo es un ejercicio que podemos hacer tod@s juntos.
 
 Vamos a ir paso a paso:
 
-1. Accedamos al siguiente enlace: http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=724,3,33,481,984,33024,0,0,0&opi=36&ftg=false&pgg=true&odg=false&fav=false&grad=false&fss=false&mode=3&cu=es-es&craap=1&fs=false&tta=8 
+1. Accedamos al siguiente enlace: 
+
+http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=724,3,33,481,984,33024,0,0,0&opi=36&ftg=false&pgg=true&odg=false&fav=false&grad=false&fss=false&mode=3&cu=es-es&craap=1&fs=false&tta=8 
+
 2. Si todo ha ido bien veremos algo así:
-3. 
+
+![captura fotocasa](fotocasa.PNG)
+
+3. Lo que vamos a hacer es capturar los datos de los pisos en venta en Gijón ahora mismo directamente desde la web (sin pedir permiso :)). Técnicamente este proceso se denomina *web-scrapping*
+
+4. Para ello, vamos a abrir **Power BI Desktop** -> **Obtener Datos** -> **Web** y pegamos el enlace anterior en el cuadro disponible para ello. Hacemos click en **Aceptar**
+
+5. En el previsualizador vemos dos elementos **Document** y **Table 0** seleccionamos **Table 0** y hacemos click en **Editar**
+
+6. Ahora mismo estamos en el **Editor de Consultas**. Renombramos las columnas haciendo doble click sobre cada una con los siguientes nombres: 
+
+* Actualización
+* Descripción
+* Superficie
+* Habitaciones
+* Precio
+
+7. Eliminamos la última columna.
+8. Seleccionamos la columna **Precio** -> **Remplazar valores** y eliminamos el caracter *€*
+9. Formateamos la columna **Precio** como número decimal. Seleccionamos la columna **Precio** -> **Transformar** -> **Tipo de Datos** -> **Número decimal**
+10. Seleccionamos la columna **Precio** y hacemos click con boton derecho. Seleccionamos **Quitar errores**.
+11. Seleccionamos la columna **Habitaciones** y eliminamos los caracteres *hab.* utilizando la opción de **reemplazar valores**. Formateamos como número entero. 
+12. Hacemos lo mismo con la columna **Superficie** y los caracteres *m2*. Formateamos como número entero.
+
 
 
 Probemos con Wikipedia
