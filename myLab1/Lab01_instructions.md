@@ -134,8 +134,10 @@ Escribimos *Mis Pisos en Gijón*. Colocamos un recuadro de color alrededor.
 **IMPORTANTE** **Observar el proceso de actualización de la WEB**
 
 
+**FINALMENTE** **Publicar y Guardar**
 
-Enlaces de Interés
+
+Enlaces de Interés. Repositorios OpenData
 ------------
 http://datos.gob.es/sites/all/themes/zen/aportabis/logo.png
 http://www.eldiario.es/turing/big_data/Mapa-iniciativas-Open-Data-Espana_0_277172540.html
