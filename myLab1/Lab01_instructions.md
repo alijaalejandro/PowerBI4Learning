@@ -36,9 +36,7 @@ En este caso, vamos a conectar con el CRM corporativo de la empresa Izertis.
 
 [CRM]: CRM_SaaS.PNG
 
-Juguemos alrredor de este conjunto de Datos
 ------------
-Veamos por ejemplo como enviar los datos de CRM a una Tabla dinámica de MS Excel.
 
 BING como servicio SaaS
 ------------
