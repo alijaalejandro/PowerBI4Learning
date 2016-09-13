@@ -86,7 +86,7 @@ Primeras transformaciones con Power BI
 -------------
 
 1.  Volvamos a la vista **Data** y creemos una nueva columna llamada **Pais**. Fijemos el valor de Pais a la constante *España*. Categoricemos esta nueva variable como tipo **Pais**. Para crear una nueva columna, vamos a **Modelado** -> **Nueva Columna** y escribimos la siguiente fórmula:
-`Country = "Spain"`
+`Pais = "España"`
 
 2.  Renombremos la columna **Delegación** como **Ciudad**. Categoricemos como **Ciudad**
 3.  Creemos una nueva coluna de nuevo, llamada **Ciudad-Pais**. Para ello escribimos la siguiente fórmula en la barra de creación de una nueva columna:
