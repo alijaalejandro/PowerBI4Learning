@@ -50,7 +50,7 @@ Probar con la palabra clave **ISIS**
 
 Probemos con la WEB
 ------------
-El siguiente ejemplo es un ejercicio que podemos hacer tod@s juntos.
+El siguiente ejemplo es un ejercicio que podemos hacer **tod@s juntos**.
 
 Vamos a ir paso a paso:
 
@@ -60,7 +60,12 @@ http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=72
 
 2. Si todo ha ido bien veremos algo así:
 
+
+
 ![captura fotocasa](fotocasa.PNG)
+
+
+
 
 3. Lo que vamos a hacer es capturar los datos de los pisos en venta en Gijón ahora mismo directamente desde la web (sin pedir permiso :)). Técnicamente este proceso se denomina *web-scrapping*
 
@@ -76,12 +81,35 @@ http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=72
 * Habitaciones
 * Precio
 
-7. Eliminamos la última columna.
+7. Eliminamos la última columna. Para ello, hacemos click con boton derecho sobre la columna y seleccionamos **Quitar**.
 8. Seleccionamos la columna **Precio** -> **Remplazar valores** y eliminamos el caracter *€*
-9. Formateamos la columna **Precio** como número decimal. Seleccionamos la columna **Precio** -> **Transformar** -> **Tipo de Datos** -> **Número decimal**
+9. Formateamos la columna **Precio** como número decimal. Seleccionamos la columna **Precio** -> **Transformar** -> **Tipo de Datos** -> **Número decimal**. Dar formato de *€*.
 10. Seleccionamos la columna **Precio** y hacemos click con boton derecho. Seleccionamos **Quitar errores**.
 11. Seleccionamos la columna **Habitaciones** y eliminamos los caracteres *hab.* utilizando la opción de **reemplazar valores**. Formateamos como número entero. 
 12. Hacemos lo mismo con la columna **Superficie** y los caracteres *m2*. Formateamos como número entero.
+13. Aplicamos y cerramos el editor de consultas.
+
+
+Bien, ahora ya podemos empezar a trabajar las visualizaciones.
+
+1. Hagamos un gráfico de barras con los precios de las viviendas en función del número de habitaciones. Edita el formato del eje y para mostrar los precios en miles de Euros.
+2. Observa que ocurre. ¿Es intuitivo el resultado? ¿Tiene sentido que los pisos de 4 habitaciones cuesten menos dinero que los de 2 y 3 habitaciones?¿Qué cantidad estamos representando en la variable **precio**?
+
+
+1. Hagamos ahora una tabla con las descripciones de los pisos.
+
+Finalmente, nos puede interesar conocer el precio promedio de los pisos en Gijón en función de los metros cuadrados. dita el formato del eje y para mostrar los precios en miles de Euros.
+Para representar esto, vamos a utilizar de nuevo un gráfico de barras con el precio en función de los metros cuadrados.
+Observa lo que ocurre. ¿Responde este gráfico a mi pregunta?
+
+
+Hagamos lo siguiente:
+1. Volvamos al editor de consultas para hacer una transformación en los datos. 
+2. Vamos a añadir una **columna condicional**. Para ellos vamos a **Agregar columna** -> **Columna condicional**
+
+Vamos a configurar la columna de la siguiente manera:
+
+![configuración de la columna condicional](config_columna_condicional.PNG)
 
 
 
