@@ -94,6 +94,8 @@ Bien, ahora ya podemos empezar a trabajar las visualizaciones.
 
 1. Hagamos un gráfico de barras con los precios de las viviendas en función del número de habitaciones. Edita el formato del eje y para mostrar los precios en miles de Euros.
 2. Observa que ocurre. ¿Es intuitivo el resultado? ¿Tiene sentido que los pisos de 4 habitaciones cuesten menos dinero que los de 2 y 3 habitaciones?¿Qué cantidad estamos representando en la variable **precio**?
+ 
+*Nota: Ajusta la agregación de la variable Precio*
 
 
 1. Hagamos ahora una tabla con las descripciones de los pisos.
@@ -111,6 +113,7 @@ Vamos a configurar la columna de la siguiente manera:
 
 ![configuración de la columna condicional](config_columna_condicional.PNG)
 
+3. Pasar el gráfico de barras a barras horizontales 
 
 
 Probemos con Wikipedia
