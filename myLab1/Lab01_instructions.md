@@ -89,6 +89,7 @@ http://www.fotocasa.es/comprar/casas/gijon/listado?crp=1&ts=gij%C3%B3n%20&llm=72
 12. Hacemos lo mismo con la columna **Superficie** y los caracteres *m2*. Formateamos como número entero.
 13. Aplicamos y cerramos el editor de consultas.
 
+**IMPORTANTE** Renombramos tanto la pagina del informe como el conjunto de datos con **MisPisos**
 
 Bien, ahora ya podemos empezar a trabajar las visualizaciones.
 
@@ -100,7 +101,9 @@ Bien, ahora ya podemos empezar a trabajar las visualizaciones.
 
 1. Hagamos ahora una tabla con las descripciones de los pisos.
 
-Finalmente, nos puede interesar conocer el precio promedio de los pisos en Gijón en función de los metros cuadrados. dita el formato del eje y para mostrar los precios en miles de Euros.
+Finalmente, nos puede interesar conocer el precio promedio de los pisos en Gijón en función de los metros cuadrados. 
+*Nota: edita el formato del eje y para mostrar los precios en miles de Euros*.
+
 Para representar esto, vamos a utilizar de nuevo un gráfico de barras con el precio en función de los metros cuadrados.
 Observa lo que ocurre. ¿Responde este gráfico a mi pregunta?
 
@@ -113,11 +116,21 @@ Vamos a configurar la columna de la siguiente manera:
 
 ![configuración de la columna condicional](config_columna_condicional.PNG)
 
-3. Pasar el gráfico de barras a barras horizontales 
+3. Pasar el gráfico de barras a barras horizontales y seleccionar el nuevo campo **Superficie Normalizada**
 
 
-Probemos con Wikipedia
-------------
+Ya casi hemos terminado :)
+
+Vamos a añadir un par de indicadores numéricos en forma de tarjeta reelevantes para nuestro informe.
+
+1. Vamos a la vista de datos y creamos una nueva columna con la siguiente fórmula `Precio por Metro Cuadrado = MisPisos[Precio]/MisPisos[Superficie]`. Formateamos como *€* y dejamos con 0 decimales.
+2. Vamos a la vista de datos y creamos una nueva columna con la siguiente fórmula `Precio por Habitación = MisPisos[Precio]/MisPisos[Habitaciones]`. Formateamos como *€* y dejamos con 0 decimales.
+3. Para crear las tarjetas, pinchamos en una zona blanca del lienzo y a continuación seleccionamos la visualización **Tarjeta** en el menú de las visualizaciones. Arrastramos el campo **Precio Metro Cuadrado**. Seleccionamos tipo de agregación **Promedio** y quitamos el formato automático de la etiqueta de datos.
+4. Repetimos el paso anterior arrastrando la variable **Precio por Habitación**.
+
+Vamos a colocar un título a nuestro informe de pisos en Gijón. Para ello hacemos click en **Nuevo cuadro de Texto**
+Escribimos *Mis Pisos en Gijón*. Colocamos un recuadro de color alrededor.
+
 
 
 Enlaces de Interés
