@@ -12,3 +12,9 @@ En este ejemplo, vamos a partir de un proyecto de Power Bi con un modelo de dato
 Explorando el modelo de datos actual.
 ------------
 
+1. Pasar a la vista de **datos** y explorar las diferentes tablas del modelo.
+2. Observar el numero de filas de cada tabla. ¿Te impresiona?
+
+3. Pasa ahora a la vista de **Relaciones**. Presta atención a la explicación del instructor!
+4. Abre el gestor de relaciones en **Administrar Relaciones**
+5. Crea una nueva relación que relacione el campo Fecha de la tabla Ventas con el campo Fecha de la tabla de Fechas. Asegurate de que la relación sea *1 a muchas* y la dirección de filtrado sea *bi-direccional*.
