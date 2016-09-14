@@ -35,9 +35,24 @@ Aquí teneís los links para copiar:
 - Alta --> http://www.fordesigner.com/imguploads/Image/cjbc/zcool/png20080526/1211811447.png
 - Normal --> http://www.fordesigner.com/imguploads/Image/cjbc/zcool/png20080526/1211811481.png
 - Baja --> http://www.fordesigner.com/imguploads/Image/cjbc/zcool/png20080526/1211811461.png
-- 
+
+3. Renombra las columnas de la nueva tabla como **Prioridad** y **Indicador**
+4. Categoriza la columna **Indicador** como **Dirección URL de la imágen** en el menú Categoría de Datos.
+
+Ahora, tenemos 2 tablas en nuestro modelo de datos. Cada una tiene una columna llamada **Prioridad*.
+Vamos a **RELACIONARLAS**
+
+1. Pasa ahora  la vista **Relaciones**.
+2. Haz click en el campo **Prioridad** de la tabla Incidencias y *arrastra* hasta el campo **Prioridad** en la Tabla *Indicador Semafórico*
+3. Abre el menú de Administrador de Relaciones y observa la explicación del Instructor.
 
 
-1. Pasa ahora a la vista de **Relaciones**. Presta atención a la explicación del instructor!
-2. Abre el gestor de relaciones en **Administrar Relaciones**
-3. Crea una nueva relación que relacione el campo Fecha de la tabla Ventas con el campo Fecha de la tabla de Fechas. Asegurate de que la relación sea *1 a muchas* y la dirección de filtrado sea *bi-direccional*.
+Visualizamos las Relaciones
+------------
+
+1. Seleccionamos una visualización de tipo tabla.
+
+
+
+
+
