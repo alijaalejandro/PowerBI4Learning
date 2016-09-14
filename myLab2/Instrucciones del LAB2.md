@@ -73,7 +73,9 @@ Creamos nuestra primera Medida (Explicita)
 ------------
 1. Volvemos a la vista de **Datos**
 2. **Modelado** -> **Nueva Medida** -> 
-  `Incidencias Totales = CALCULATE(COUNT(Incidencias[Índice]);ALL('Indicador Semafórico'))`
+  
+`Incidencias Totales = CALCULATE(COUNT(Incidencias[Índice]);ALL('Indicador Semafórico'))`
+
 3. Volvemos al panel de **Informe**
 4. Copiamos (*CRTL+C*) la visualización anterior de la tarjeta y pegamos (*CRTL+V*) al lado. 
 5. Sustituimos el campo por la nueva medida que hemos creado **Incidencias Totales **
@@ -81,5 +83,6 @@ Creamos nuestra primera Medida (Explicita)
 7. Vamos a Calcular ahora el %de cada tipo de incidencia.
 8. Volvemos a la vista de **Datos**
 9. **Modelado** -> **Nueva Medida** -> 
+  
   `Porcentaje de Incidencias = COUNT(Incidencias[Índice])/Incidencias[Incidencias Totales] `
 
