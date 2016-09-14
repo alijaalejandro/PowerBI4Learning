@@ -51,8 +51,33 @@ Visualizamos las Relaciones
 ------------
 
 1. Seleccionamos una visualización de tipo tabla.
+2. Arrastra el campo **Indicador** de la tabla Indicador Semafórico.
+3. Haz lo mismo con el campo **Prioridad** de la tabla Incidencias
+4. Repite el paso anterior. Selecciona tipo **Recuento**
+5. Filtra los resultados de tal manera que solo se muestren los campos con Prioridad Alta, Baja y Normal. Es decir, filtra de manera que no se muestren los campos vaciós o sin prioridad asignada.
+6. Aumenta el tamaño de la fuente de la tabla a 30 para verlo mejor.
 
 
+Introducción práctica al concepto de Medida
+------------
+1. Vuelve un momento al **Editor de Consulta** y crea una nueva **Columna ïndice** comenzando con el índice 1.
+2. Aplica y Cierra
+3. Inserta una visualización de tipo **Tarjeta**
+4. Arrastra el campo Prioridad y ajusta la variable para que se calcule el **Recuento**. Dale formato para que se vea bien. Titula como **Número Total de Incidencias**
+5. Crea una nueva visualización de tipo **Segmentación de Datos**. Arrastra el campo Indicador de la tabla Indicador Semafórico.
+6. Prueba a filtrar los datos dinámicamente. Observa que le ocurre al **Número Total de Incicencias**
 
+*Explicación* Si tenemos filtrado un tipo de incidencia **perdemos** la información sobre el **número total de incidencias**. Esto no es aceptable por el Responsable de Mantenimiento que necesita saber en todo momento como evoluciona el número total de incicencias.
 
+Creamos nuestra primera Medida (Explicita)
+------------
+1. Volvemos a la vista de **Datos**
+2. **Modelado** -> **Nueva Medida** -> `Incidencias Totales = CALCULATE(COUNT(Incidencias[Índice]);ALL('Indicador Semafórico'))`
+3. Volvemos al panel de **Informe**
+4. Copiamos (*CRTL+C*) la visualización anterior de la tarjeta y pegamos (*CRTL+V*) al lado. 
+5. Sustituimos el campo por la nueva medida que hemos creado **Incidencias Totales **
+6. Observa lo que ocurre ahora que actuamos sobre los filtros de prioridad de incidencia.
+7. Vamos a Calcular ahora el %de cada tipo de incidencia.
+8. Volvemos a la vista de **Datos**
+9. **Modelado** -> **Nueva Medida** -> `Porcentaje de Incidencias = COUNT(Incidencias[Índice])/Incidencias[Incidencias Totales] `
 
