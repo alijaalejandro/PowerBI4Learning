@@ -14,7 +14,7 @@ Explorando el modelo de datos actual.
 *Nota: esta primera parte de conexión con el CRM y extracción de datos la hace solamente el instructor*
 
 1. Descargar y guardar el fichero de Excel en la carpeta de trabajo.
-2. **Obtener Datos** -> **Excel** -> **Editar**
+2. **Obtener Datos** -> **Excel** -> **Editar** (Seleccionar **Table 1**)
 3. Eliminar las dos primeras columnas. Puedes selecionar las columnas a la vez haciendo click en una y a continuación en otra manteniedo la tecla **Shift** pulsada.
 4. Renombramos la columna *(No modificar) Fecha de modificación* por *Fecha Modificación*
 5. Eliminamos la columna Región.
@@ -56,6 +56,7 @@ Visualizamos las Relaciones
 4. Repite el paso anterior. Selecciona tipo **Recuento**
 5. Filtra los resultados de tal manera que solo se muestren los campos con Prioridad Alta, Baja y Normal. Es decir, filtra de manera que no se muestren los campos vaciós o sin prioridad asignada.
 6. Aumenta el tamaño de la fuente de la tabla a 30 para verlo mejor.
+7. Incluye un filtro a nivel de página sobre la variable **Prioridad** para NO mostrar los campos vacíos.
 
 
 Introducción práctica al concepto de Medida
@@ -80,7 +81,7 @@ Creamos nuestra primera Medida (Explicita)
 4. Copiamos (*CRTL+C*) la visualización anterior de la tarjeta y pegamos (*CRTL+V*) al lado. 
 5. Sustituimos el campo por la nueva medida que hemos creado **Incidencias Totales **
 6. Observa lo que ocurre ahora que actuamos sobre los filtros de prioridad de incidencia.
-7. Vamos a Calcular ahora el %de cada tipo de incidencia.
+7. Vamos a Calcular ahora el **%** de cada tipo de incidencia.
 8. Volvemos a la vista de **Datos**
 9. **Modelado** -> **Nueva Medida** -> 
   
@@ -89,4 +90,12 @@ Creamos nuestra primera Medida (Explicita)
 10. Formateamos como `%` y eliminamos decimales.
 11. Creamos una nueva tarjeta con esta medida y colocamos a lado de la medida de incidencias que varía en función de la prioridad.
 12. Finalmente cambiamos el título de la primera tarjeta a ** Número de Incidencias**.
+
+Publicamos y Cerramos
+------------
+- Enlaces de Interés:
+    https://powerbi.microsoft.com/es-es/documentation/powerbi-desktop-measures/
+    https://powerbi.microsoft.com/es-es/documentation/powerbi-desktop-tutorial-create-measures/
+
+
 
