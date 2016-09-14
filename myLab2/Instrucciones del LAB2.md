@@ -88,4 +88,5 @@ Creamos nuestra primera Medida (Explicita)
 
 10. Formateamos como `%` y eliminamos decimales.
 11. Creamos una nueva tarjeta con esta medida y colocamos a lado de la medida de incidencias que varía en función de la prioridad.
+12. Finalmente cambiamos el título de la primera tarjeta a ** Número de Incidencias**.
 
