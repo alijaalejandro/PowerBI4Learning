@@ -42,9 +42,12 @@ MS excel y Power BI <-> Power BI y Excel
 5. Selecciona gráfico de barras horizontal. Selecciona los rangos adecuados.
 6. Ordena la columna **Sales Amount** de menos a más.
 7. Da formato al eje x para que muestre las cantidades en formato de miles.
+
+-----------------
+**PASOS OPCIONALES**
 8. Guarda el libro de Excel y prueba importarlo en Power BI service de nuevo. Observa que opciones te ofrece el programa.
 9. Trata de **Cargar el archivo Excel en Power BI.
-
+---------------
 
 1. Vamos a probar ahora otra cosa.
 2. Descarga el archivo **Modelo Power Pivot Ejemplo.xlsx** desde aquí https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab3/Modelo%20Power%20Pivot%20Ejemplo.xlsx
