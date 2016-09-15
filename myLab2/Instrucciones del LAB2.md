@@ -61,7 +61,7 @@ Visualizamos las Relaciones
 
 Introducción práctica al concepto de Medida
 ------------
-1. Vuelve un momento al **Editor de Consulta** y crea una nueva **Columna ïndice** comenzando con el índice 1.
+1. Vuelve un momento al **Editor de Consulta** y crea una nueva **Columna índice** comenzando con el índice 1.
 2. Aplica y Cierra
 3. Inserta una visualización de tipo **Tarjeta**
 4. Arrastra el campo Prioridad y ajusta la variable para que se calcule el **Recuento**. Dale formato para que se vea bien. Titula como **Número Total de Incidencias**
