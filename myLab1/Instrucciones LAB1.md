@@ -137,7 +137,7 @@ Escribimos *Mis Pisos en Gijón*. Colocamos un recuadro de color alrededor.
 
 Enlaces de Interés. Repositorios OpenData
 ------------
-http://datos.gob.es/sites/all/themes/zen/aportabis/logo.png
+http://datos.gob.es
 http://www.eldiario.es/turing/big_data/Mapa-iniciativas-Open-Data-Espana_0_277172540.html
 
 
