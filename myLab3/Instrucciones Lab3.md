@@ -46,12 +46,13 @@ MS excel y Power BI <-> Power BI y Excel
 **************
 
 **PASOS OPCIONALES**
+
 8. Guarda el libro de Excel y prueba importarlo en Power BI service de nuevo. Observa que opciones te ofrece el programa.
 9. Trata de **Cargar el archivo Excel en Power BI.
 
 **************
 
-1. Vamos a probar ahora otra cosa.
+1. **Vamos a probar ahora otra cosa**
 2. Descarga el archivo **Modelo Power Pivot Ejemplo.xlsx** desde aquí https://github.com/alijaalejandro/PowerBI4Learning/raw/master/myLab3/Modelo%20Power%20Pivot%20Ejemplo.xlsx
 3. Vamos a Power BI Service y trata de importarlo con la opción **Importar datos de Excel a Power BI**
 4. Observa lo que ocurre. Obrserva el conjunto de datos de este libro de Excel. ¿Crees que eres capaz de ver estas tablas de datos en MS Excel?
