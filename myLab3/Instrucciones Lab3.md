@@ -19,7 +19,11 @@ Os voy a dejar las instrucciones para Android. Para iOS son muy similares.
 
 MS excel y Power BI <-> Power BI y Excel
 ------------
-1. Abre con Power BI Desktop el archivo synopticpanel-sample.pbix
+
+**IMPORTANTE** Antes de empezar esta sección vamos a instalar un complemento de visualizaciones en Power BI. Sigue las instrucciones del instructor.
+
+
+1. Abre con Power BI Desktop el archivo **synopticpanel-sample.pbix** https://github.com/alijaalejandro/PowerBI4Learning/blob/master/myLab3/synopticpanel-sample.pbix
 2. Observa el modelo de datos en la vista de **Relaciones**
 3. Publica este informe y visítalo en Power Bi Service.
 4. Busca la opción **ANALIZAR EN EXCEL** en el Conjunto de datos correspondiente a este informe.
