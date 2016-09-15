@@ -61,6 +61,7 @@ MS excel y Power BI <-> Power BI y Excel
 
 Muchas gracias!. Hemos terminado!
 ------------
+![aplauso] (descarga.jpg)
 
 Queremos conocer tu opinión
 ------------
