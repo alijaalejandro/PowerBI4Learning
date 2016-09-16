@@ -1,4 +1,4 @@
-Lab 2. Ejemplo de modelado de datos complejo con Power BI
+Lab 3. Características adicionales de Power BI y Excel
 ================
 
 Intruducción
